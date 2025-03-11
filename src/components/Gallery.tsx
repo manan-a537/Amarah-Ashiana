@@ -5,25 +5,25 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 const galleryItems = [
   {
     id: 1,
-    image: 'media/IMG-20250309-WA0060.jpg',
+    image: 'https://ohnnehfcidcngpmixwek.supabase.co/storage/v1/object/public/media//IMG-20250309-WA0060.jpg.jpg',
     title: 'Expansive Green Areas',
     description: 'Lush gardens and play areas for children',
   },
   {
     id: 2,
-    image: 'media/IMG-20250309-WA0066.jpg',
+    image: 'https://ohnnehfcidcngpmixwek.supabase.co/storage/v1/object/public/media//IMG-20250309-WA0066.jpg.jpg',
     title: 'Modern Living Spaces',
     description: 'Contemporary designs with family comfort in mind',
   },
   {
     id: 3,
-    image: 'media/IMG-20250309-WA0065.jpg',
+    image: 'https://ohnnehfcidcngpmixwek.supabase.co/storage/v1/object/public/media//IMG-20250309-WA0065.jpg',
     title: 'Kid-Friendly Amenities',
     description: 'Specially designed spaces for children of all ages',
   },
   {
     id: 4,
-    image: 'media/IMG-20250309-WA0059.jpg',
+    image: 'https://ohnnehfcidcngpmixwek.supabase.co/storage/v1/object/public/media//IMG-20250309-WA0059.jpg',
     title: 'Community Spaces',
     description: 'Areas designed for families to connect and grow together',
   },
