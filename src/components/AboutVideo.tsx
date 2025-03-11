@@ -78,7 +78,7 @@ const AboutVideo = () => {
             playsInline
             muted
           >
-            <source src="/public/lovable-uploads/VID-20250309-WA0008.mp4" type="video/mp4" />
+            <source src="/media/VID-20250309-WA0008.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         )}
