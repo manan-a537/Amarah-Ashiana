@@ -13,7 +13,7 @@ const Hero = () => {
       id="home" 
       className="relative min-h-screen flex items-center justify-center bg-cover bg-center"
       style={{ 
-        backgroundImage: "url('media/IMG-20250309-WA0061.jpg')" 
+        backgroundImage: "url('https://ohnnehfcidcngpmixwek.supabase.co/storage/v1/object/public/media//IMG-20250309-WA0061.jpg')" 
       }}
     >
       {/* Overlay */}
