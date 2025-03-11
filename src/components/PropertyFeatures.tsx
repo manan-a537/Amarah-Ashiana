@@ -23,8 +23,8 @@ const PropertyFeatures = () => {
       possession: 'Ready to move',
       offers: ['Free maintenance for 1 year', '5% discount on early booking'],
       images: [
-        { src: '/media/IMG-20250309-WA0063.jpg' },
-        { src: '/media/IMG-20250309-WA0066.jpg' },
+        '/public/media/IMG-20250309-WA0063.jpg',
+        '/public/media/IMG-20250309-WA0066.jpg',
       ]
     },
     '2bhk': {
@@ -35,8 +35,8 @@ const PropertyFeatures = () => {
       possession: 'Ready to move',
       offers: ['Free club membership for 2 years', 'Kitchen appliances included'],
       images: [
-        { src: '/media/IMG-20250309-WA0070.jpg' },
-        { src: '/media/IMG-20250309-WA0067.jpg' },
+        '/public/media/IMG-20250309-WA0070.jpg',
+        '/public/media/IMG-20250309-WA0067.jpg',
       ]
     },
     '3bhk': {
@@ -47,8 +47,8 @@ const PropertyFeatures = () => {
       possession: 'Ready to move',
       offers: ['Home automation system included', 'Complimentary interior design consultation'],
       images: [
-        { src: '/media/IMG-20250309-WA0069.jpg' },
-        { src: '/media/IMG-20250309-WA0068.jpg' },
+        '/public/media/IMG-20250309-WA0069.jpg',
+        '/public/media/IMG-20250309-WA0068.jpg',
       ]
     },
   };
@@ -97,7 +97,7 @@ const PropertyFeatures = () => {
                 <CarouselItem key={index}>
                   <div className="relative rounded-xl overflow-hidden aspect-[4/3]">
                     <img 
-                      src={image.src} 
+                      src={image} 
                       alt={`${activeProperty.title} - View ${index + 1}`} 
                       className="w-full h-full object-contain bg-gray-100"
                     />
