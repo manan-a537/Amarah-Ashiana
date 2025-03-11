@@ -48,7 +48,7 @@ const PropertyFeatures = () => {
       offers: ['Home automation system included', 'Complimentary interior design consultation'],
       images: [
         'https://ohnnehfcidcngpmixwek.supabase.co/storage/v1/object/public/media//IMG-20250309-WA0069.jpg',
-        'https://ohnnehfcidcngpmixwek.supabase.co/storage/v1/object/public/media//IMG-20250309-WA0068.jpg.jpg',
+        'https://ohnnehfcidcngpmixwek.supabase.co/storage/v1/object/public/media//IMG-20250309-WA0068.jpg',
       ]
     },
   };
