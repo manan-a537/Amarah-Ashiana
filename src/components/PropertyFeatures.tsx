@@ -47,7 +47,7 @@ const PropertyFeatures = () => {
       possession: 'Ready to move',
       offers: ['Home automation system included', 'Complimentary interior design consultation'],
       images: [
-        '/media/IMG-20250309-WA0069.jpg',
+        'media\IMG-20250309-WA0069.png',
         '/media/IMG-20250309-WA0068.jpg',
       ]
     },
