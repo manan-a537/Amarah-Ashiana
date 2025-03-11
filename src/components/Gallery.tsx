@@ -5,13 +5,13 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 const galleryItems = [
   {
     id: 1,
-    image: 'https://ohnnehfcidcngpmixwek.supabase.co/storage/v1/object/public/media//IMG-20250309-WA0060.jpg.jpg',
+    image: 'https://ohnnehfcidcngpmixwek.supabase.co/storage/v1/object/public/media//IMG-20250309-WA0060.jpg',
     title: 'Expansive Green Areas',
     description: 'Lush gardens and play areas for children',
   },
   {
     id: 2,
-    image: 'https://ohnnehfcidcngpmixwek.supabase.co/storage/v1/object/public/media//IMG-20250309-WA0066.jpg.jpg',
+    image: 'https://ohnnehfcidcngpmixwek.supabase.co/storage/v1/object/public/media//IMG-20250309-WA0066.jpg',
     title: 'Modern Living Spaces',
     description: 'Contemporary designs with family comfort in mind',
   },
