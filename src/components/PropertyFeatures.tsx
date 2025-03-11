@@ -23,8 +23,8 @@ const PropertyFeatures = () => {
       possession: 'Ready to move',
       offers: ['Free maintenance for 1 year', '5% discount on early booking'],
       images: [
-        '/media/IMG-20250309-WA0063.jpg',
-        '/media/IMG-20250309-WA0066.jpg',
+        'https://ohnnehfcidcngpmixwek.supabase.co/storage/v1/object/public/media//IMG-20250309-WA0063.jpg',
+        'https://ohnnehfcidcngpmixwek.supabase.co/storage/v1/object/public/media//IMG-20250309-WA0066.jpg',
       ]
     },
     '2bhk': {
@@ -35,8 +35,8 @@ const PropertyFeatures = () => {
       possession: 'Ready to move',
       offers: ['Free club membership for 2 years', 'Kitchen appliances included'],
       images: [
-        '/media/IMG-20250309-WA0070.jpg',
-        '/media/IMG-20250309-WA0067.jpg',
+        'https://ohnnehfcidcngpmixwek.supabase.co/storage/v1/object/public/media//IMG-20250309-WA0070.jpg',
+        'https://ohnnehfcidcngpmixwek.supabase.co/storage/v1/object/public/media//IMG-20250309-WA0067.jpg',
       ]
     },
     '3bhk': {
@@ -47,8 +47,8 @@ const PropertyFeatures = () => {
       possession: 'Ready to move',
       offers: ['Home automation system included', 'Complimentary interior design consultation'],
       images: [
-        'media\IMG-20250309-WA0069.png',
-        '/media/IMG-20250309-WA0068.jpg',
+        'https://ohnnehfcidcngpmixwek.supabase.co/storage/v1/object/public/media//IMG-20250309-WA0069.jpg',
+        'https://ohnnehfcidcngpmixwek.supabase.co/storage/v1/object/public/media//IMG-20250309-WA0068.jpg.jpg',
       ]
     },
   };
