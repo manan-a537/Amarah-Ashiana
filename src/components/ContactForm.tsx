@@ -97,7 +97,7 @@ const ContactForm = () => {
               </div>
               <div>
                 <h4 className="font-semibold">Email Us</h4>
-                <p className="text-gray-600">info@ashianaamarah.com</p>
+                <p className="text-gray-600">info@ashianaamarah.</p>
               </div>
             </div>
             
@@ -107,7 +107,7 @@ const ContactForm = () => {
               </div>
               <div>
                 <h4 className="font-semibold">Visit Us</h4>
-                <p className="text-gray-600">Sector 37, Bhiwadi, Rajasthan 301019</p>
+                <p className="text-gray-600">Omaxe Gurgaon Mall, Sector 49, 2nd floor, Shop no.7</p>
               </div>
             </div>
           </div>
