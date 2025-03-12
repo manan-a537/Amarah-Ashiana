@@ -28,7 +28,7 @@ const Hero = () => {
           <h2 className="text-xl sm:text-2xl md:text-2xl font-semibold mb-6 text-white">
             Kids Centric Homes: Behtar Parvarish Ka Pata
           </h2>
-          <p className="text-lg sm:text-xl md:text-xl mb-8 text-gray-200">
+          <p className="text-lg sm:text-xl md:text-xl mb-8 text-gray-200 font-bold">
             Discover exclusive properties in prime locations with our premium real estate services.
             Your journey to the perfect home starts here.
           </p>
