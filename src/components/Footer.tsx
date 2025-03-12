@@ -1,103 +1,113 @@
+import { useState } from 'react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
-import { Facebook, Twitter, Instagram, Youtube, Mail, Phone, MapPin } from 'lucide-react';
-import { Link } from 'react-router-dom';
+// Define our gallery items
+const galleryItems = [
+  {
+    id: 1,
+    image: 'https://ohnnehfcidcngpmixwek.supabase.co/storage/v1/object/public/media//IMG-20250309-WA0060.jpg',
+    title: 'Expansive Green Areas',
+    description: 'Lush gardens and play areas for children',
+  },
+  {
+    id: 2,
+    image: 'https://ohnnehfcidcngpmixwek.supabase.co/storage/v1/object/public/media//IMG-20250309-WA0066.jpg',
+    title: 'Modern Living Spaces',
+    description: 'Contemporary designs with family comfort in mind',
+  },
+  {
+    id: 3,
+    image: 'https://ohnnehfcidcngpmixwek.supabase.co/storage/v1/object/public/media//IMG-20250309-WA0065.jpg',
+    title: 'Kid-Friendly Amenities',
+    description: 'Specially designed spaces for children of all ages',
+  },
+  {
+    id: 4,
+    image: 'https://ohnnehfcidcngpmixwek.supabase.co/storage/v1/object/public/media//IMG-20250309-WA0059.jpg',
+    title: 'Community Spaces',
+    description: 'Areas designed for families to connect and grow together',
+  },
+];
 
-const Footer = () => {
-  const currentYear = new Date().getFullYear();
-  
+const Gallery = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const goToPrevious = () => {
+    const isFirstSlide = currentIndex === 0;
+    const newIndex = isFirstSlide ? galleryItems.length - 1 : currentIndex - 1;
+    setCurrentIndex(newIndex);
+  };
+
+  const goToNext = () => {
+    const isLastSlide = currentIndex === galleryItems.length - 1;
+    const newIndex = isLastSlide ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
+  };
+
+  const goToSlide = (slideIndex: number) => {
+    setCurrentIndex(slideIndex);
+  };
+
   return (
-    <footer className="bg-gray-900 text-white pt-16 pb-6">
+    <section id="gallery" className="bg-gray-50 py-24">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-          <div>
-            <Link to="/" className="inline-block mb-4">
-              <span className="text-2xl font-bold">
-                <span className="text-amarah-red">Ashiana</span>{' '}
-                <span className="text-gray-300">Amarah</span>
-              </span>
-            </Link>
-            <p className="text-gray-400 mb-4">
-              Kid-centric homes designed for the perfect upbringing of your children in a nurturing environment.
-            </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-amarah-blue transition-colors">
-                <Facebook size={20} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-amarah-blue transition-colors">
-                <Twitter size={20} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-amarah-blue transition-colors">
-                <Instagram size={20} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-amarah-blue transition-colors">
-                <Youtube size={20} />
-              </a>
-            </div>
-          </div>
-          
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="#home" className="text-gray-400 hover:text-white transition-colors">Home</a>
-              </li>
-              <li>
-                <a href="#about" className="text-gray-400 hover:text-white transition-colors">About Us</a>
-              </li>
-              <li>
-                <a href="#gallery" className="text-gray-400 hover:text-white transition-colors">Gallery</a>
-              </li>
-              <li>
-                <a href="#amenities" className="text-gray-400 hover:text-white transition-colors">Amenities</a>
-              </li>
-              <li>
-                <a href="#contact" className="text-gray-400 hover:text-white transition-colors">Contact</a>
-              </li>
-            </ul>
-          </div>
-          
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
-            <ul className="space-y-4">
-              <li className="flex items-start">
-                <Mail className="h-5 w-5 text-amarah-blue mr-3 mt-1" />
-                <span className="text-gray-400">info@ashianaamarah.com</span>
-              </li>
-              <li className="flex items-start">
-                <Phone className="h-5 w-5 text-amarah-blue mr-3 mt-1" />
-                <span className="text-gray-400">+91 1234 567890</span>
-              </li>
-              <li className="flex items-start">
-                <MapPin className="h-5 w-5 text-amarah-blue mr-3 mt-1" />
-                <span className="text-gray-400">Omaxe Gurgaon Mall, Sector 49, 2nd floor, Shop no.7</span>
-              </li>
-            </ul>
-          </div>
-          
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Newsletter</h3>
-            <p className="text-gray-400 mb-4">
-              Subscribe to get latest updates and information.
-            </p>
-            <div className="flex">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                className="px-4 py-2 bg-gray-800 text-white border border-gray-700 rounded-l-md focus:outline-none flex-grow"
-              />
-              <button className="bg-amarah-blue hover:bg-amarah-light-blue text-white px-4 py-2 rounded-r-md">
-                Subscribe
-              </button>
-            </div>
-          </div>
+        <div className="max-w-4xl mx-auto text-center mb-12">
+          <h2 className="section-title mx-auto">Gallery</h2>
+          <p className="text-lg">
+            Explore the beautiful spaces and amenities that make Ashiana Amarah a unique place to live
+          </p>
         </div>
-        
-        <div className="border-t border-gray-800 pt-6 text-center text-gray-500">
-          <p>© {currentYear} Ashiana Amarah. All rights reserved.</p>
+
+        <div className="relative max-w-6xl mx-auto">
+          {/* Main Slide */}
+          <div className="aspect-[9/16] md:aspect-[21/9] w-full relative overflow-hidden rounded-xl shadow-lg">
+            <div 
+              className="h-full w-full transition-opacity duration-500"
+              style={{ opacity: 1 }}
+            >
+              <img 
+                src={galleryItems[currentIndex].image} 
+                className="absolute inset-0 w-full h-full object-contain bg-gray-100 transition-transform duration-1000"
+                alt={galleryItems[currentIndex].title}
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+              <div className="absolute bottom-0 left-0 p-4 md:p-6 text-white">
+                <h3 className="text-xl md:text-2xl font-bold mb-1 md:mb-2">{galleryItems[currentIndex].title}</h3>
+                <p className="text-white/80 text-sm md:text-base">{galleryItems[currentIndex].description}</p>
+              </div>
+            </div>
+          </div>
+
+          {/* Navigation Arrows */}
+          <button 
+            onClick={goToPrevious}
+            className="absolute top-1/2 left-2 md:left-4 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-md z-10 transition-all"
+          >
+            <ChevronLeft className="text-gray-800" size={24} />
+          </button>
+          <button 
+            onClick={goToNext}
+            className="absolute top-1/2 right-2 md:right-4 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-md z-10 transition-all"
+          >
+            <ChevronRight className="text-gray-800" size={24} />
+          </button>
+
+          {/* Thumbnails */}
+          <div className="flex justify-center mt-4 space-x-2">
+            {galleryItems.map((slide, slideIndex) => (
+              <div
+                key={slide.id}
+                onClick={() => goToSlide(slideIndex)}
+                className={`h-2 w-8 rounded-full cursor-pointer transition-all duration-300 ${
+                  currentIndex === slideIndex ? "bg-amarah-blue" : "bg-gray-300"
+                }`}
+              ></div>
+            ))}
+          </div>
         </div>
       </div>
-    </footer>
+    </section>
   );
 };
 
-export default Footer;
+export default Gallery;
