@@ -21,14 +21,14 @@ const Hero = () => {
       
       <div className="container mx-auto px-4 z-10 text-white">
         <div className="max-w-4xl animate-fade-in text-center md:text-left mb-48">
-          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4" style={{ fontFamily: 'Core Sans NR SC 45 Regular, sans-serif' }}>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4" style={{ fontFamily: 'Core Sans NR SC 45 Regular, sans-serif' }}>
             <span className="text-white" style={{ fontFamily: 'Core Sans NR SC 45 Regular, sans-serif' }}>Find Your Dream Property with</span>{' '}
             <span className="text-amarah-red block md:inline" style={{ fontFamily: 'Core Sans NR SC 45 Regular, sans-serif' }}>Ashiana Amarah</span>
           </h1>
-          <h2 className="text-lg sm:text-xl md:text-2xl font-semibold mb-6 text-white">
+          <h2 className="text-xl sm:text-2xl md:text-2xl font-semibold mb-6 text-white">
             Kids Centric Homes: Behtar Parvarish Ka Pata
           </h2>
-          <p className="text-base sm:text-lg md:text-xl mb-8 text-gray-200">
+          <p className="text-lg sm:text-xl md:text-xl mb-8 text-gray-200">
             Discover exclusive properties in prime locations with our premium real estate services.
             Your journey to the perfect home starts here.
           </p>
