@@ -49,7 +49,7 @@ const Promotion = () => {
           <div className="lg:w-1/2 mt-8 lg:mt-0">
             <div className="relative animate-fade-in">
               <img 
-                src="https://images.unsplash.com/photo-1466721591366-2d5fba72006d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" 
+                src="https://ohnnehfcidcngpmixwek.supabase.co/storage/v1/object/public/media//IMG-20250309-WA0065.jpg" 
                 alt="Ashiana Amarah Final Phase" 
                 className="rounded-lg shadow-xl w-full h-auto object-cover"
               />
