@@ -42,7 +42,7 @@ const PropertyFeatures = () => {
     '3bhk': {
       title: '3 BHK Apartments',
       description: 'Luxurious living spaces with premium finishes and expansive layouts for larger families.',
-      startingPrice: '₹82.5 Lakhs',
+      startingPrice: '₹2.55 Crores',
       area: '1200-1450 sq ft',
       possession: 'Ready to move',
       offers: ['Home automation system included', 'Complimentary interior design consultation'],
@@ -118,7 +118,7 @@ const PropertyFeatures = () => {
                   <CardTitle className="text-2xl text-amarah-blue">{activeProperty.title}</CardTitle>
                   <CardDescription className="mt-2">{activeProperty.description}</CardDescription>
                 </div>
-                <Badge variant="default" className="bg-amarah-red">New Launch</Badge>
+                
               </div>
             </CardHeader>
             <CardContent>
