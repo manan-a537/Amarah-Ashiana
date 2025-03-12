@@ -1,4 +1,3 @@
-
 import { Check, Building, Ruler, Users, TreePine, Puzzle } from 'lucide-react';
 import { Button } from './ui/button';
 
@@ -11,6 +10,13 @@ const PropertyLayout = () => {
     { icon: <Building className="h-6 w-6 text-amarah-blue" />, title: "Towers", value: "21 (Standalone towers, 4 units per core)" },
     { icon: <Puzzle className="h-6 w-6 text-amarah-blue" />, title: "Structure", value: "Stilt + 14" },
   ];
+
+  const scrollToAmenities = () => {
+    const element = document.getElementById('amenities');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <section id="property-layout" className="container-custom bg-gradient-to-b from-white to-amarah-sky-blue/30">
@@ -48,7 +54,11 @@ const PropertyLayout = () => {
               <li className="flex items-center gap-2"><Check size={16} className="text-amarah-blue" /> And many more...</li>
             </ul>
             <div className="mt-4">
-              <Button variant="default" className="bg-amarah-blue hover:bg-amarah-light-blue text-white transition-colors duration-300">
+              <Button 
+                variant="default" 
+                className="bg-amarah-blue hover:bg-amarah-light-blue text-white transition-colors duration-300"
+                onClick={scrollToAmenities}
+              >
                 View All Amenities
               </Button>
             </div>
