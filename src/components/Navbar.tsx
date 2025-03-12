@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, Phone, X } from 'lucide-react';
@@ -36,7 +35,7 @@ const Navbar = () => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'
+        isScrolled ? 'bg-white shadow-md py-2' : 'bg-[#33c3f0] py-4'
       }`}
     >
       <div className="container mx-auto px-4 flex justify-between items-center">
@@ -44,8 +43,8 @@ const Navbar = () => {
         <div className="flex items-center">
           <Link to="/" className="flex items-center">
             <span className="text-2xl font-bold">
-              <span className="text-amarah-red">Ashiana</span>{' '}
-              <span className="text-gray-600">Amarah</span>
+              <span className="text-black">Ashiana</span>{' '}
+              <span className="text-white">Amarah</span>
             </span>
           </Link>
         </div>
@@ -93,7 +92,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button 
-          className="md:hidden text-amarah-blue"
+          className="md:hidden text-amarah"
           onClick={toggleMobileMenu}
         >
           <Menu size={24} />
@@ -101,44 +100,44 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="fixed inset-0 bg-white z-50 flex flex-col">
+          <div className="fixed inset-0 bg-black z-50 flex flex-col">
             <div className="flex justify-between items-center p-4 border-b">
               <div className="text-2xl font-bold">
-                <span className="text-amarah-red">Ashiana</span>{' '}
-                <span className="text-gray-600">Amarah</span>
+                <span className="text-black">Ashiana</span>{' '}
+                <span className="text-white">Amarah</span>
               </div>
               <button onClick={toggleMobileMenu}>
-                <X size={24} className="text-gray-800" />
+                <X size={24} className="text-white" />
               </button>
             </div>
             <div className="flex flex-col p-4 space-y-4">
               <button 
                 onClick={() => scrollToSection('home')}
-                className="text-gray-800 py-2 text-lg"
+                className="text-white py-2 text-lg"
               >
                 Home
               </button>
               <button 
                 onClick={() => scrollToSection('about')}
-                className="text-gray-800 py-2 text-lg"
+                className="text-white py-2 text-lg"
               >
                 About
               </button>
               <button 
                 onClick={() => scrollToSection('gallery')}
-                className="text-gray-800 py-2 text-lg"
+                className="text-white py-2 text-lg"
               >
                 Gallery
               </button>
               <button 
                 onClick={() => scrollToSection('amenities')}
-                className="text-gray-800 py-2 text-lg"
+                className="text-white py-2 text-lg"
               >
                 Amenities
               </button>
               <button 
                 onClick={() => scrollToSection('contact')}
-                className="text-gray-800 py-2 text-lg"
+                className="text-white py-2 text-lg"
               >
                 Contact
               </button>
