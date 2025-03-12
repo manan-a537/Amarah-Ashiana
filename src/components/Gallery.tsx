@@ -60,7 +60,7 @@ const Gallery = () => {
 
         <div className="relative max-w-6xl mx-auto">
           {/* Main Slide */}
-          <div className="aspect-[16/9] md:aspect-[21/9] w-full relative overflow-hidden rounded-xl shadow-lg">
+          <div className="aspect-[9/16] md:aspect-[21/9] w-full relative overflow-hidden rounded-xl shadow-lg">
             <div 
               className="h-full w-full transition-opacity duration-500"
               style={{ opacity: 1 }}
@@ -71,9 +71,9 @@ const Gallery = () => {
                 alt={galleryItems[currentIndex].title}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-              <div className="absolute bottom-0 left-0 p-6 text-white">
-                <h3 className="text-2xl font-bold mb-2">{galleryItems[currentIndex].title}</h3>
-                <p className="text-white/80">{galleryItems[currentIndex].description}</p>
+              <div className="absolute bottom-0 left-0 p-4 md:p-6 text-white">
+                <h3 className="text-xl md:text-2xl font-bold mb-1 md:mb-2">{galleryItems[currentIndex].title}</h3>
+                <p className="text-white/80 text-sm md:text-base">{galleryItems[currentIndex].description}</p>
               </div>
             </div>
           </div>
@@ -81,13 +81,13 @@ const Gallery = () => {
           {/* Navigation Arrows */}
           <button 
             onClick={goToPrevious}
-            className="absolute top-1/2 left-4 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-md z-10 transition-all"
+            className="absolute top-1/2 left-2 md:left-4 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-md z-10 transition-all"
           >
             <ChevronLeft className="text-gray-800" size={24} />
           </button>
           <button 
             onClick={goToNext}
-            className="absolute top-1/2 right-4 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-md z-10 transition-all"
+            className="absolute top-1/2 right-2 md:right-4 -translate-y-1/2 bg-white/80 hover:bg-white p-2 rounded-full shadow-md z-10 transition-all"
           >
             <ChevronRight className="text-gray-800" size={24} />
           </button>
