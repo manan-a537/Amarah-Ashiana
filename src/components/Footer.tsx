@@ -69,7 +69,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-amarah-blue mr-3 mt-1" />
-                <span className="text-gray-400">Omaxe Gurgaon Mall, Sector 49, 2nd floor, Shop no.7</span>
+                <span className="text-gray-400">Omaxe Gurgaon Mall, Sector 49, 2nd floor, Shop no.7</span>
               </li>
             </ul>
           </div>
