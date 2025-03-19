@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Map, Navigation, MapPin } from 'lucide-react';
 
@@ -40,7 +39,12 @@ const LocationMap = () => {
                 <img 
                   src="/lovable-uploads/4497bc04-06fb-4eae-b399-9392ae0daa08.png" 
                   alt="Ashiana Amarah Site Map" 
-                  className="w-full rounded-lg"
+                  className="w-full rounded-lg mb-4"
+                />
+                <img 
+                  src="https://ohnnehfcidcngpmixwek.supabase.co/storage/v1/object/public/media//IMG-20250309-WA0062.jpg" 
+                  alt="Additional View" 
+                  className="w-full rounded-lg mb-4"
                 />
                 <div className="flex flex-wrap gap-4 justify-center max-w-md mx-auto mt-6">
                   <div className="flex items-center gap-2 bg-amarah-sky-blue px-4 py-2 rounded-md">
