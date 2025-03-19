@@ -47,14 +47,14 @@ const Promotion = () => {
           </div>
           <div className="lg:w-1/2 mt-8 lg:mt-0">
             <div className="relative animate-fade-in">
+              <div className="absolute -top-14 -right-0 bg-amarah-blue text-white px-6 py-3 rounded-md font-bold">
+                Final Phase
+              </div>
               <img 
                 src="https://ohnnehfcidcngpmixwek.supabase.co/storage/v1/object/public/media//IMG-20250309-WA0065.jpg" 
                 alt="Ashiana Amarah Final Phase" 
                 className="rounded-lg shadow-xl w-full h-auto object-cover"
               />
-              <div className="absolute -top-4 -right-4 bg-amarah-blue text-white px-6 py-3 rounded-md font-bold">
-                Final Phase
-              </div>
             </div>
           </div>
         </div>
