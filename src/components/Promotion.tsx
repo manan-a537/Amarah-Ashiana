@@ -1,4 +1,3 @@
-
 import { ArrowRight } from 'lucide-react';
 
 const Promotion = () => {
@@ -23,7 +22,7 @@ const Promotion = () => {
               Launching Our <span className="text-amarah-blue">Final Phase</span>
             </h2>
             <p className="text-lg mb-6">
-              Don't miss the opportunity to be part of our exclusive community. The final phase of Ashiana Amarah offers the perfect blend of luxury, comfort, and a nurturing environment for your children.
+              Don't miss the opportunity to be part of our exclusive community. The final phase of Ashiana Amarah offers the perfect blend of luxury, comfort, and a nurturing environment for your children. Discover exclusive properties in prime locations with our premium real estate services. Your journey to the perfect home starts here.
             </p>
             <ul className="mb-6 space-y-2">
               <li className="flex items-start gap-2">
