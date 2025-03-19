@@ -42,8 +42,8 @@ const PropertyFeatures = () => {
     '3bhk': {
       title: '3 BHK Apartments',
       description: 'Luxurious living spaces with premium finishes and expansive layouts for larger families.',
-      startingPrice: '₹2.55 Crores',
-      area: '1200-1450 sq ft',
+      startingPrice: '₹2.5 - 4.5 Crores',
+      area: '1000-1450 sq ft',
       possession: 'Ready to move',
       offers: ['Home automation system included', 'Complimentary interior design consultation'],
       images: [
