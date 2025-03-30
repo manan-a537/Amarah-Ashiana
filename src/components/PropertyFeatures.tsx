@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ArrowRight, Tag, Home, CheckCircle2, Calendar } from 'lucide-react';
+import { ArrowRight, MapPin, Tag, Home, CheckCircle2, Calendar } from 'lucide-react';
 import { Button } from './ui/button';
 import { 
   Carousel,
@@ -15,17 +15,15 @@ const PropertyFeatures = () => {
   const [activeTab, setActiveTab] = useState('3bhk');
 
   const propertyFeatures = {
-    '1bhk': {
-      title: '1 BHK Apartments',
-      description: 'Compact and efficiently designed living spaces perfect for small families or singles.',
-      startingPrice: '₹42.5 Lakhs',
-      area: '650-750 sq ft',
-      possession: 'Ready to move',
-      offers: ['Free maintenance for 1 year', '5% discount on early booking'],
-      images: [
-        'https://ohnnehfcidcngpmixwek.supabase.co/storage/v1/object/public/media//IMG-20250309-WA0063.jpg',
-        'https://ohnnehfcidcngpmixwek.supabase.co/storage/v1/object/public/media//IMG-20250309-WA0066.jpg',
-      ]
+    'properties': {
+      title: 'Properties Listed',
+      description: 'Explore our listed properties with detailed addresses and map links.',
+      properties: [
+        {
+          address: 'Ashiana Amarah, Sector 93, Village, Wazirpur, Gurugram, Haryana 122505',
+          mapLink: 'https://maps.app.goo.gl/NPSTUgARvZ9Ho65cA?g_st=awb',
+        },
+      ],
     },
     '2bhk': {
       title: '2 BHK Apartments',
@@ -83,93 +81,122 @@ const PropertyFeatures = () => {
                   : 'bg-transparent text-gray-700 hover:bg-amarah-sky-blue'
               }`}
             >
-              {key.toUpperCase()} Apartments
+              {key === 'properties' ? 'Properties Listed' : key.toUpperCase() + ' Apartments'}
             </button>
           ))}
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-        <div className="animate-fade-in h-full" style={{ animationDelay: "0.3s" }}>
-          <Carousel className="w-full h-full">
-            <CarouselContent>
-              {activeProperty.images.map((image, index) => (
-                <CarouselItem key={index}>
-                  <div className="relative rounded-xl overflow-hidden aspect-[4/3]">
-                    <img 
-                      src={image} 
-                      alt={`${activeProperty.title} - View ${index + 1}`} 
-                      className="w-full h-full object-contain bg-gray-100"
-                    />
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious className="left-2" />
-            <CarouselNext className="right-2" />
-          </Carousel>
-        </div>
-
-        <div className="animate-slide-in" style={{ animationDelay: "0.4s" }}>
+      {activeTab === 'properties' ? (
+        <div className="grid grid-cols-1 gap-8 mb-12">
           <Card className="h-full border-none shadow-lg hover:shadow-xl transition-all duration-300">
             <CardHeader>
-              <div className="flex justify-between items-start">
-                <div>
-                  <CardTitle className="text-2xl text-amarah-blue">{activeProperty.title}</CardTitle>
-                  <CardDescription className="mt-2">{activeProperty.description}</CardDescription>
-                </div>
-                
-              </div>
+              <CardTitle className="text-2xl text-amarah-blue">{activeProperty.title}</CardTitle>
+              <p className="mt-2 text-gray-600">{activeProperty.description}</p>
             </CardHeader>
             <CardContent>
-              <div className="space-y-4">
-                <div className="flex items-center gap-3">
-                  <Tag className="h-5 w-5 text-amarah-blue" />
-                  <div>
-                    <p className="text-sm text-gray-500">Starting Price</p>
-                    <p className="font-semibold">{activeProperty.startingPrice}</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Home className="h-5 w-5 text-amarah-blue" />
-                  <div>
-                    <p className="text-sm text-gray-500">Carpet Area</p>
-                    <p className="font-semibold">{activeProperty.area}</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Calendar className="h-5 w-5 text-amarah-blue" />
-                  <div>
-                    <p className="text-sm text-gray-500">Possession</p>
-                    <p className="font-semibold">{activeProperty.possession}</p>
-                  </div>
-                </div>
-
-                <div className="mt-6">
-                  <p className="font-semibold mb-2">Special Offers:</p>
-                  <ul className="space-y-1">
-                    {activeProperty.offers.map((offer, index) => (
-                      <li key={index} className="flex items-start gap-2">
-                        <CheckCircle2 className="h-5 w-5 text-amarah-red shrink-0 mt-0.5" />
-                        <span>{offer}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
+              <ul className="space-y-4">
+                {activeProperty.properties.map((property, index) => (
+                  <li key={index} className="flex flex-col sm:flex-row justify-between items-center border-b pb-4">
+                    <div className="text-gray-700 text-center sm:text-left mb-2 sm:mb-0">{property.address}</div>
+                    <a 
+                      href={property.mapLink} 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="bg-amarah-blue hover:bg-amarah-light-blue text-white px-3 py-1 text-sm rounded-md flex items-center transition-colors duration-300"
+                    >
+                      View on Map
+                      <MapPin size={14} className="ml-2" />
+                    </a>
+                  </li>
+                ))}
+              </ul>
             </CardContent>
-            <CardFooter>
-              <Button 
-                onClick={scrollToContact}
-                className="w-full bg-amarah-blue hover:bg-amarah-light-blue text-white transition-colors duration-300"
-              >
-                Schedule a Visit
-                <ArrowRight size={16} />
-              </Button>
-            </CardFooter>
           </Card>
         </div>
-      </div>
+      ) : (
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+          <div className="animate-fade-in h-full" style={{ animationDelay: "0.3s" }}>
+            <Carousel className="w-full h-full">
+              <CarouselContent>
+                {activeProperty.images.map((image, index) => (
+                  <CarouselItem key={index}>
+                    <div className="relative rounded-xl overflow-hidden aspect-[4/3]">
+                      <img 
+                        src={image} 
+                        alt={`${activeProperty.title} - View ${index + 1}`} 
+                        className="w-full h-full object-contain bg-gray-100"
+                      />
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="left-2" />
+              <CarouselNext className="right-2" />
+            </Carousel>
+          </div>
+
+          <div className="animate-slide-in" style={{ animationDelay: "0.4s" }}>
+            <Card className="h-full border-none shadow-lg hover:shadow-xl transition-all duration-300">
+              <CardHeader>
+                <div className="flex justify-between items-start">
+                  <div>
+                    <CardTitle className="text-2xl text-amarah-blue">{activeProperty.title}</CardTitle>
+                    <CardDescription className="mt-2">{activeProperty.description}</CardDescription>
+                  </div>
+                  
+                </div>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <div className="flex items-center gap-3">
+                    <Tag className="h-5 w-5 text-amarah-blue" />
+                    <div>
+                      <p className="text-sm text-gray-500">Starting Price</p>
+                      <p className="font-semibold">{activeProperty.startingPrice}</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Home className="h-5 w-5 text-amarah-blue" />
+                    <div>
+                      <p className="text-sm text-gray-500">Carpet Area</p>
+                      <p className="font-semibold">{activeProperty.area}</p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Calendar className="h-5 w-5 text-amarah-blue" />
+                    <div>
+                      <p className="text-sm text-gray-500">Possession</p>
+                      <p className="font-semibold">{activeProperty.possession}</p>
+                    </div>
+                  </div>
+
+                  <div className="mt-6">
+                    <p className="font-semibold mb-2">Special Offers:</p>
+                    <ul className="space-y-1">
+                      {activeProperty.offers.map((offer, index) => (
+                        <li key={index} className="flex items-start gap-2">
+                          <CheckCircle2 className="h-5 w-5 text-amarah-red shrink-0 mt-0.5" />
+                          <span>{offer}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </CardContent>
+              <CardFooter>
+                <Button 
+                  onClick={scrollToContact}
+                  className="w-full bg-amarah-blue hover:bg-amarah-light-blue text-white transition-colors duration-300"
+                >
+                  Schedule a Visit
+                  <ArrowRight size={16} />
+                </Button>
+              </CardFooter>
+            </Card>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
