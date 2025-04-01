@@ -42,7 +42,7 @@ const LocationMap = () => {
                   className="w-full rounded-lg mb-4"
                 />
                 <img 
-                  src="/media/IMG-20250309-WA0062.jpg" 
+                  src="https://github.com/manan-a537/Amarah-Ashiana/blob/main/media/IMG-20250309-WA0062.jpg?raw=true" 
                   alt="Additional View" 
                   className="w-full rounded-lg mb-4"
                 />
