@@ -78,7 +78,7 @@ const AboutVideo = () => {
             playsInline
             muted
           >
-            <source src="https://ohnnehfcidcngpmixwek.supabase.co/storage/v1/object/public/media//VID-20250309-WA0008.mp4" type="video/mp4" />
+            <source src="https://youtu.be/2FsA3K-mol8" />
             Your browser does not support the video tag.
           </video>
         )}
