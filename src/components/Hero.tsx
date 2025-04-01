@@ -13,7 +13,7 @@ const Hero = () => {
       id="home" 
       className="relative min-h-screen flex items-center justify-center bg-cover bg-center mt-12"
       style={{ 
-        backgroundImage: "url('https://ohnnehfcidcngpmixwek.supabase.co/storage/v1/object/public/media//IMG-20250309-WA0059.jpg')" 
+        backgroundImage: "url('https://github.com/manan-a537/Amarah-Ashiana/blob/main/media/IMG-20250309-WA0059.jpg?raw=true')" 
       }}
     >
       {/* Gradient Overlay */}
