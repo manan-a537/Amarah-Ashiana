@@ -51,7 +51,7 @@ const Promotion = () => {
                 Final Phase
               </div>
               <img 
-                src="https://ohnnehfcidcngpmixwek.supabase.co/storage/v1/object/public/media//IMG-20250309-WA0065.jpg" 
+                src="https://github.com/manan-a537/Amarah-Ashiana/blob/main/media/IMG-20250309-WA0065.jpg?raw=true" 
                 alt="Ashiana Amarah Final Phase" 
                 className="rounded-lg shadow-xl w-full h-auto object-cover"
               />
