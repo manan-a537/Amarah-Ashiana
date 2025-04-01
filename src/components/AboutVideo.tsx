@@ -78,7 +78,7 @@ const AboutVideo = () => {
             playsInline
             muted
           >
-            <source src="https://youtu.be/2FsA3K-mol8" />
+            <source src="https://github.com/manan-a537/Amarah-Ashiana/blob/main/media/VID-20250309-WA0008.mp4?raw=true" />
             Your browser does not support the video tag.
           </video>
         )}
