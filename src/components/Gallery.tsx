@@ -5,25 +5,25 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 const galleryItems = [
   {
     id: 1,
-    image: 'https://ohnnehfcidcngpmixwek.supabase.co/storage/v1/object/public/media//IMG-20250309-WA0060.jpg',
+    image: 'https://github.com/manan-a537/Amarah-Ashiana/blob/main/media/IMG-20250309-WA0060.jpg?raw=true',
     title: 'Expansive Green Areas',
     description: 'Lush gardens and play areas for children',
   },
   {
     id: 2,
-    image: 'https://ohnnehfcidcngpmixwek.supabase.co/storage/v1/object/public/media//IMG-20250309-WA0066.jpg',
+    image: 'https://github.com/manan-a537/Amarah-Ashiana/blob/main/media/IMG-20250309-WA0066.jpg?raw=true',
     title: 'Modern Living Spaces',
     description: 'Contemporary designs with family comfort in mind',
   },
   {
     id: 3,
-    image: 'https://ohnnehfcidcngpmixwek.supabase.co/storage/v1/object/public/media//IMG-20250309-WA0065.jpg',
+    image: 'https://github.com/manan-a537/Amarah-Ashiana/blob/main/media/IMG-20250309-WA0065.jpg?raw=true',
     title: 'Kid-Friendly Amenities',
     description: 'Specially designed spaces for children of all ages',
   },
   {
     id: 4,
-    image: 'https://ohnnehfcidcngpmixwek.supabase.co/storage/v1/object/public/media//IMG-20250309-WA0059.jpg',
+    image: 'https://github.com/manan-a537/Amarah-Ashiana/blob/main/media/IMG-20250309-WA0059.jpg?raw=true',
     title: 'Community Spaces',
     description: 'Areas designed for families to connect and grow together',
   },
