@@ -42,7 +42,7 @@ const LocationMap = () => {
                   className="w-full rounded-lg mb-4"
                 />
                 <img 
-                  src="https://ohnnehfcidcngpmixwek.supabase.co/storage/v1/object/public/media//IMG-20250309-WA0062.jpg" 
+                  src="/media/IMG-20250309-WA0062.jpg" 
                   alt="Additional View" 
                   className="w-full rounded-lg mb-4"
                 />
