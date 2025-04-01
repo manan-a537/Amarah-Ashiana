@@ -33,8 +33,8 @@ const PropertyFeatures = () => {
       possession: 'Ready to move',
       offers: ['Free club membership for 2 years', 'Kitchen appliances included'],
       images: [
-        'https://ohnnehfcidcngpmixwek.supabase.co/storage/v1/object/public/media//IMG-20250309-WA0070.jpg',
-        'https://ohnnehfcidcngpmixwek.supabase.co/storage/v1/object/public/media//IMG-20250309-WA0067.jpg',
+        'https://github.com/manan-a537/Amarah-Ashiana/blob/main/media/IMG-20250309-WA0070.jpg?raw=true',
+        'https://github.com/manan-a537/Amarah-Ashiana/blob/main/media/IMG-20250309-WA0067.jpg?raw=true',
       ]
     },
     '3bhk': {
@@ -45,8 +45,8 @@ const PropertyFeatures = () => {
       possession: 'Ready to move',
       offers: ['Home automation system included', 'Complimentary interior design consultation'],
       images: [
-        'https://ohnnehfcidcngpmixwek.supabase.co/storage/v1/object/public/media//IMG-20250309-WA0069.jpg',
-        'https://ohnnehfcidcngpmixwek.supabase.co/storage/v1/object/public/media//IMG-20250309-WA0068.jpg',
+        'https://github.com/manan-a537/Amarah-Ashiana/blob/main/media/IMG-20250309-WA0069.jpg?raw=true',
+        'https://github.com/manan-a537/Amarah-Ashiana/blob/main/media/IMG-20250309-WA0068.jpg?raw=true',
       ]
     },
   };
