@@ -43,7 +43,7 @@ const LocationMap = () => {
                 />
                 <img 
                   src="https://github.com/manan-a537/Amarah-Ashiana/blob/main/media/IMG-20250309-WA0062.jpg?raw=true" 
-                  alt="Additional View" 
+                  alt="Map showing Ashiana Amarah location in Sector 93, Gurgaon with landmarks" 
                   className="w-full rounded-lg mb-4"
                 />
                 <div className="flex flex-wrap gap-4 justify-center max-w-md mx-auto mt-6">
