@@ -57,7 +57,7 @@ const AboutVideo = () => {
           <>
             <img 
               src="https://images.unsplash.com/photo-1721322800607-8c38375eef04?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80" 
-              alt="Video thumbnail" 
+              alt="Ashiana Amarah Amarah Ashiana Gurugram Luxury Appartments Sector 93A Final Phase" 
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
